@@ -1,0 +1,54 @@
+﻿<h1 class="hed">WelloCome Our Sit</h1>
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header">
+            <h3>Create Blog Post</h3>
+        </div>
+        <div class="card-body">
+            <form method="post" action="/Blog/Create">
+
+                <div class="mb-3">
+                    <label class="form-label">Heading</label>
+                    <input type="text" name="Heading" class="form-control" required />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Page Title</label>
+                    <input type="text" name="PageTitle" class="form-control" required />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Short Description</label>
+                    <textarea name="ShortDescription" class="form-control" rows="2"></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Content</label>
+                    <textarea name="Content" class="form-control" rows="4"></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Featured Image URL</label>
+                    <input type="text" name="FeaturedImageUrl" class="form-control" />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">URL Handle</label>
+                    <input type="text" name="UrlHandle" class="form-control" />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Published Date</label>
+                    <input type="date" name="PublishedDate" class="form-control" />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Author</label>
+                    <input type="text" name="Author" class="form-control" />
+                </div>
+                <button type="submit" class="btn btn-primary">Create Post</button>
+
+            </form>
+        </div>
+    </div>
+</div>
